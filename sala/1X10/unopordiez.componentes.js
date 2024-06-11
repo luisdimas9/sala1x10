@@ -8,6 +8,7 @@ const urls = urlsUnopordiez();
 function getInstitucion() {
     const url = urls.apiTotalInt;
       fetch(url, {
+          mode: 'no-cors',
         method: 'GET',
         headers: {
           'Authorization': `Bearer ${token}`,
@@ -42,6 +43,7 @@ function getInstitucion() {
 function getFuncionario(id) {
     const url = urls.apiObrero;
       fetch(`${url}/${id}`, {
+          mode: 'no-cors',
         method: 'GET',
         headers: {
           //'Authorization': `Bearer ${token}`,
@@ -76,6 +78,7 @@ function getFuncionario(id) {
 function getCargaUnopordiez(id) {
     const url = urls.apiUno;
     fetch(`${url}/${id}`, {
+        mode: 'no-cors',
       method: 'GET',
       headers: {
         'Authorization': `Bearer ${token}`,
