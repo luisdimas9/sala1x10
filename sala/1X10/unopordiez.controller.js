@@ -15,6 +15,7 @@ function agregarUnopordiez(cedula, dni) {
     };
   console.log(unopordiez)
     fetch(apiUrl, {
+      mode: 'no-cors',
       method: 'POST',
       headers: {
         'Authorization': `Bearer ${token}`,
@@ -38,6 +39,7 @@ function aprobarCarga(cedula, estado) {
   const method = 'PUT';
   
    fetch(`${url}/${cedula}`, {
+     mode: 'no-cors',
       method,
       headers: {
           'Authorization': `Bearer ${token}`,
@@ -63,6 +65,7 @@ function eliminarFuncionario(id) {
   const url = urls.api;
   const method = 'DELETE';
   fetch(`${url}/${id}`, {
+    mode: 'no-cors',
       method,
       headers: {
           'Authorization': `Bearer ${token}`,
@@ -79,6 +82,7 @@ function eliminarFuncionario(id) {
 function updateTotalCarga() {
   const url = urls.apiTotalInt;
   fetch(`${url}`, {
+    mode: 'no-cors',
     method: 'GET',
     headers: {
       'Authorization': `Bearer ${token}`,
