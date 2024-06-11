@@ -8,6 +8,7 @@ const urls = urlsMain();
 function getDatoGeneral(id) {
     const url = urls.general;
     fetch(`${url}`, {
+        mode: 'no-cors',
       method: 'GET',
       headers: {
         'Authorization': `Bearer ${token}`,
