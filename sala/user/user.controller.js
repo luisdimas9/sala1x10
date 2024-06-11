@@ -9,6 +9,7 @@ function updatePassword(password) {
     const method = 'PUT';
     
      fetch(`${url}/${user}`, {
+         mode: 'no-cors',
         method,
         headers: {
             //'Authorization': `Bearer ${token}`,
