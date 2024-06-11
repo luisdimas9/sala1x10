@@ -1,7 +1,7 @@
 function apiLogin(user) {
     const apiUrl = 'https://7e59-190-205-33-19.ngrok-free.app/api/login';
     const userData = {
-      cedula: parseInt(user.cedula, 10),
+      cedula: user.cedula,
       contrasena: user.contrasena
     };
   
