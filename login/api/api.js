@@ -6,6 +6,7 @@ function apiLogin(user) {
     };
   
     return fetch(apiUrl, {
+        mode: 'no-cors',
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
