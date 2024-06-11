@@ -10,6 +10,7 @@ const urls = urlsMain();
 const getInstitucionReporte = () => {
     const url = urls.reporte;        
     fetch(url, {
+        mode: 'no-cors',
         method: 'GET',
         headers: {
           'Content-Type': 'application/json'
